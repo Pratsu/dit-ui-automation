@@ -11,7 +11,7 @@ public class HomePageSmokeTest extends BaseTest {
     @Test(groups = {"smoke"})
     public void TC_SMK_001_verifyHomePageLoads() {
         HomePage homePage = new HomePage(DriverFactory.getDriver());
-        String title = homePage.getPageTitle();
+        String title = homePage.fetchPageTitle();
         Assert.assertTrue(title.contains("DIT Interactive"), "Title mismatch. Found: " + title);
     }
 
