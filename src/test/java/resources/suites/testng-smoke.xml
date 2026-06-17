@@ -4,7 +4,8 @@
         <listener class-name="listeners.TestListener"/>
     </listeners>
 
-    <test name="Smoke Tests">
+    <test name="Smoke Tests Chrome">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.smoke.HomePageSmokeTest"/>
             <class name="tests.smoke.NavigationSmokeTest"/>

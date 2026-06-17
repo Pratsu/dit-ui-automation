@@ -5,28 +5,59 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
     protected static final String BASE_URL = "https://ditinteractive.com/";
 
+    @Parameters("browser")
     @BeforeMethod
-    public void setUp() {
-        WebDriverManager.chromedriver().setup();
+    public void setUp(String browser) {
 
-        ChromeOptions options = new ChromeOptions();
+        WebDriver driver;
 
-        String headless = System.getProperty("headless");
-        if ("true".equalsIgnoreCase(headless)) {
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--window-size=1920,1080");
+        switch (browser.toLowerCase()) {
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
+                    firefoxOptions.addArguments("--headless");
+                }
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
+                    edgeOptions.addArguments("--headless=new");
+                    edgeOptions.addArguments("--no-sandbox");
+                    edgeOptions.addArguments("--disable-dev-shm-usage");
+                }
+                driver = new EdgeDriver(edgeOptions);
+                break;
+
+            case "chrome":
+            default:
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
+                    chromeOptions.addArguments("--headless=new");
+                    chromeOptions.addArguments("--no-sandbox");
+                    chromeOptions.addArguments("--disable-dev-shm-usage");
+                    chromeOptions.addArguments("--window-size=1920,1080");
+                }
+                driver = new ChromeDriver(chromeOptions);
+                break;
         }
 
-        WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get(BASE_URL);
         DriverFactory.setDriver(driver);
