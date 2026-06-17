@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import utils.LoggerUtil;
 
 public class BaseTest {
 
@@ -20,11 +21,14 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setUp(String browser) {
+        LoggerUtil.info("========== TEST SETUP STARTED ==========");
+        LoggerUtil.info("Browser: " + browser);
 
         WebDriver driver;
 
         switch (browser.toLowerCase()) {
             case "firefox":
+                LoggerUtil.info("Initializing Firefox browser");
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
@@ -34,6 +38,7 @@ public class BaseTest {
                 break;
 
             case "edge":
+                LoggerUtil.info("Initializing Edge browser");
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
                 if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
@@ -46,6 +51,7 @@ public class BaseTest {
 
             case "chrome":
             default:
+                LoggerUtil.info("Initializing Chrome browser");
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
@@ -59,16 +65,21 @@ public class BaseTest {
         }
 
         driver.manage().window().maximize();
+        LoggerUtil.info("Navigating to: " + BASE_URL);
         driver.get(BASE_URL);
         DriverFactory.setDriver(driver);
+        LoggerUtil.info("========== TEST SETUP COMPLETED ==========");
     }
 
     @AfterMethod
     public void tearDown() {
+        LoggerUtil.info("========== TEST TEARDOWN STARTED ==========");
         WebDriver driver = DriverFactory.getDriver();
         if (driver != null) {
+            LoggerUtil.info("Closing browser");
             driver.quit();
         }
         DriverFactory.unload();
+        LoggerUtil.info("========== TEST TEARDOWN COMPLETED ==========");
     }
 }

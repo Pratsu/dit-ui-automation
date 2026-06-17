@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class CareersPage extends BasePage {
 
     private By pageHeading = By.xpath("//h2[contains(text(),'Turning Great Ideas')]");
-    private By applyNowLinks = By.xpath("//a[contains(text(),'Apply Now')]");
+    private By applyNowLinks = By.xpath("//a[contains(@href,'/vacancies/')]");
 
     public CareersPage(WebDriver driver) {
         super(driver);
