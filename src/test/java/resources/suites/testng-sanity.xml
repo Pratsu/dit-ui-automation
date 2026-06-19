@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Sanity Tests Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.sanity.SanityTest"/>
+        </classes>
+    </test>
+</suite>
