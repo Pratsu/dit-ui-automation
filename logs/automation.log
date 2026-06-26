@@ -1,81 +1,99 @@
-2026-06-17 16:00:44 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:00:44 [INFO] Browser: chrome
-2026-06-17 16:00:44 [INFO] Initializing Chrome browser
-2026-06-17 16:00:45 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:00:49 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:00:49 [INFO] Starting test: TC_SMK_001_verifyHomePageLoads
-2026-06-17 16:00:49 [INFO] Page title: DIT Interactive | Web, Ecommerce & AI Experts in USA & UK
-2026-06-17 16:00:49 [INFO] Test passed: TC_SMK_001_verifyHomePageLoads
-2026-06-17 16:00:49 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:00:49 [INFO] Closing browser
-2026-06-17 16:00:50 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:00:50 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:00:50 [INFO] Browser: chrome
-2026-06-17 16:00:50 [INFO] Initializing Chrome browser
-2026-06-17 16:00:50 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:00:53 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:00:53 [INFO] Starting test: TC_SMK_002_verifyServicesSection
-2026-06-17 16:00:53 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'Our Services')]
-2026-06-17 16:00:54 [INFO] Test passed: TC_SMK_002_verifyServicesSection
-2026-06-17 16:00:54 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:00:54 [INFO] Closing browser
-2026-06-17 16:00:54 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:00:54 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:00:54 [INFO] Browser: chrome
-2026-06-17 16:00:54 [INFO] Initializing Chrome browser
-2026-06-17 16:00:55 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:00:59 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:00:59 [INFO] Starting test: TC_SMK_003_verifyTestimonialsSection
-2026-06-17 16:00:59 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'What Our Client Says')]
-2026-06-17 16:00:59 [INFO] Test passed: TC_SMK_003_verifyTestimonialsSection
-2026-06-17 16:00:59 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:00:59 [INFO] Closing browser
-2026-06-17 16:00:59 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:00:59 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:00:59 [INFO] Browser: chrome
-2026-06-17 16:00:59 [INFO] Initializing Chrome browser
-2026-06-17 16:01:00 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:01:03 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:01:03 [INFO] Starting test: TC_SMK_004_verifyCertifiedSection
-2026-06-17 16:01:03 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'Certified')]
-2026-06-17 16:01:03 [INFO] Test passed: TC_SMK_004_verifyCertifiedSection
-2026-06-17 16:01:03 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:01:03 [INFO] Closing browser
-2026-06-17 16:01:04 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:01:04 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:01:04 [INFO] Browser: chrome
-2026-06-17 16:01:04 [INFO] Initializing Chrome browser
-2026-06-17 16:01:04 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:01:08 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:01:12 [INFO] Checking visibility of element: By.xpath: //h6[contains(text(),'Collaborate with Us')]
-2026-06-17 16:01:12 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:01:12 [INFO] Closing browser
-2026-06-17 16:01:12 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:01:12 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:01:12 [INFO] Browser: chrome
-2026-06-17 16:01:12 [INFO] Initializing Chrome browser
-2026-06-17 16:01:13 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:01:16 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:01:21 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'Turning Great Ideas')]
-2026-06-17 16:01:21 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:01:21 [INFO] Closing browser
-2026-06-17 16:01:21 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:01:21 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:01:21 [INFO] Browser: chrome
-2026-06-17 16:01:21 [INFO] Initializing Chrome browser
-2026-06-17 16:01:22 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:01:24 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:01:28 [INFO] Checking visibility of element: By.xpath: //h4[contains(text(),'India')]
-2026-06-17 16:01:29 [INFO] Checking visibility of element: By.xpath: //h4[contains(text(),'UK')]
-2026-06-17 16:01:29 [INFO] Checking visibility of element: By.xpath: //h4[contains(text(),'USA')]
-2026-06-17 16:01:29 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:01:29 [INFO] Closing browser
-2026-06-17 16:01:29 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-06-17 16:01:29 [INFO] ========== TEST SETUP STARTED ==========
-2026-06-17 16:01:29 [INFO] Browser: chrome
-2026-06-17 16:01:29 [INFO] Initializing Chrome browser
-2026-06-17 16:01:30 [INFO] Navigating to: https://ditinteractive.com/
-2026-06-17 16:01:33 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-06-17 16:01:37 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-06-17 16:01:37 [INFO] Closing browser
-2026-06-17 16:01:37 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:27:51 [INFO] ========== SUITE STARTED: Smoke Tests Chrome ==========
+2026-06-26 12:27:51 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:27:51 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:27:51 [INFO] Browser: chrome
+2026-06-26 12:27:51 [INFO] Browser: chrome
+2026-06-26 12:27:51 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:27:51 [INFO] Initializing Chrome browser
+2026-06-26 12:27:51 [INFO] Browser: chrome
+2026-06-26 12:27:51 [INFO] Initializing Chrome browser
+2026-06-26 12:27:51 [INFO] Initializing Chrome browser
+2026-06-26 12:27:55 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:27:55 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:27:55 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:28:03 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:03 [INFO] Test started: TC_SMK_002_verifyServicesSection
+2026-06-26 12:28:03 [INFO] Starting test: TC_SMK_002_verifyServicesSection
+2026-06-26 12:28:03 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'Our Services')]
+2026-06-26 12:28:03 [INFO] Test passed: TC_SMK_002_verifyServicesSection
+2026-06-26 12:28:03 [INFO] Test PASSED: TC_SMK_002_verifyServicesSection
+2026-06-26 12:28:03 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:03 [INFO] Closing browser
+2026-06-26 12:28:03 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:03 [INFO] Test started: TC_SMK_001_verifyHomePageLoads
+2026-06-26 12:28:03 [INFO] Starting test: TC_SMK_001_verifyHomePageLoads
+2026-06-26 12:28:03 [INFO] Page title: DIT Interactive | Web, Ecommerce & AI Experts in USA & UK
+2026-06-26 12:28:03 [INFO] Test passed: TC_SMK_001_verifyHomePageLoads
+2026-06-26 12:28:03 [INFO] Test PASSED: TC_SMK_001_verifyHomePageLoads
+2026-06-26 12:28:03 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:03 [INFO] Closing browser
+2026-06-26 12:28:03 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:03 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:28:03 [INFO] Browser: chrome
+2026-06-26 12:28:03 [INFO] Initializing Chrome browser
+2026-06-26 12:28:03 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:03 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:28:03 [INFO] Browser: chrome
+2026-06-26 12:28:03 [INFO] Initializing Chrome browser
+2026-06-26 12:28:04 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:28:04 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:28:05 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:05 [INFO] Test started: TC_SMK_003_verifyTestimonialsSection
+2026-06-26 12:28:05 [INFO] Starting test: TC_SMK_003_verifyTestimonialsSection
+2026-06-26 12:28:05 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'What Our Client Says')]
+2026-06-26 12:28:05 [INFO] Test passed: TC_SMK_003_verifyTestimonialsSection
+2026-06-26 12:28:05 [INFO] Test PASSED: TC_SMK_003_verifyTestimonialsSection
+2026-06-26 12:28:05 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:05 [INFO] Closing browser
+2026-06-26 12:28:06 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:06 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:28:06 [INFO] Browser: chrome
+2026-06-26 12:28:06 [INFO] Initializing Chrome browser
+2026-06-26 12:28:07 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:28:12 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:12 [INFO] Test started: TC_SMK_005_verifyContactPageLoads
+2026-06-26 12:28:15 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:15 [INFO] Test started: TC_SMK_006_verifyCareersPageLoads
+2026-06-26 12:28:18 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:18 [INFO] Test started: TC_SMK_004_verifyCertifiedSection
+2026-06-26 12:28:18 [INFO] Starting test: TC_SMK_004_verifyCertifiedSection
+2026-06-26 12:28:18 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'Certified')]
+2026-06-26 12:28:18 [INFO] Test passed: TC_SMK_004_verifyCertifiedSection
+2026-06-26 12:28:18 [INFO] Test PASSED: TC_SMK_004_verifyCertifiedSection
+2026-06-26 12:28:18 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:18 [INFO] Closing browser
+2026-06-26 12:28:18 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:18 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:28:18 [INFO] Browser: chrome
+2026-06-26 12:28:18 [INFO] Initializing Chrome browser
+2026-06-26 12:28:19 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:28:21 [INFO] Checking visibility of element: By.xpath: //h2[contains(text(),'Turning Great Ideas')]
+2026-06-26 12:28:22 [INFO] Test PASSED: TC_SMK_006_verifyCareersPageLoads
+2026-06-26 12:28:22 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:22 [INFO] Closing browser
+2026-06-26 12:28:22 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:22 [INFO] ========== TEST SETUP STARTED ==========
+2026-06-26 12:28:22 [INFO] Browser: chrome
+2026-06-26 12:28:22 [INFO] Initializing Chrome browser
+2026-06-26 12:28:23 [INFO] Checking visibility of element: By.xpath: //h6[contains(text(),'Collaborate with Us')]
+2026-06-26 12:28:23 [INFO] Navigating to: https://ditinteractive.com/
+2026-06-26 12:28:24 [INFO] Test PASSED: TC_SMK_005_verifyContactPageLoads
+2026-06-26 12:28:24 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:24 [INFO] Closing browser
+2026-06-26 12:28:25 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:25 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:25 [INFO] Test started: TC_SMK_007_verifyContactPageLocations
+2026-06-26 12:28:32 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-06-26 12:28:32 [INFO] Test started: TC_SMK_008_verifyCareersJobListings
+2026-06-26 12:28:35 [INFO] Checking visibility of element: By.xpath: //h4[contains(text(),'India')]
+2026-06-26 12:28:36 [INFO] Checking visibility of element: By.xpath: //h4[contains(text(),'UK')]
+2026-06-26 12:28:37 [INFO] Checking visibility of element: By.xpath: //h4[contains(text(),'USA')]
+2026-06-26 12:28:37 [INFO] Test PASSED: TC_SMK_007_verifyContactPageLocations
+2026-06-26 12:28:37 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:37 [INFO] Closing browser
+2026-06-26 12:28:37 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:55 [INFO] Test PASSED: TC_SMK_008_verifyCareersJobListings
+2026-06-26 12:28:55 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-06-26 12:28:55 [INFO] Closing browser
+2026-06-26 12:28:55 [INFO] ========== TEST TEARDOWN COMPLETED ==========
+2026-06-26 12:28:56 [INFO] ========== SUITE FINISHED: Smoke Tests Chrome ==========

@@ -2,6 +2,7 @@
 <suite name="Sanity Suite">
     <listeners>
         <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.RetryTransformer"/>
     </listeners>
 
     <test name="Sanity Tests Chrome">
