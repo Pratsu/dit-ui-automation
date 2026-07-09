@@ -1,6 +1,6 @@
 package tests.sanity;
 
-import base.BaseTest;
+ import base.BaseTest;
 import driver.DriverFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;

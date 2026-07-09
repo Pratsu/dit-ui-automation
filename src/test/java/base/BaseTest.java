@@ -12,15 +12,20 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import utils.ConfigReader;
 import utils.LoggerUtil;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
-    protected static final String BASE_URL = "https://ditinteractive.com/";
+    protected static final String BASE_URL =
+            ConfigReader.getProperty("base.url");
 
     @Parameters("browser")
     @BeforeMethod
-    public void setUp(String browser) {
+    public void setUp(@Optional("chrome") String browser) {
+
         LoggerUtil.info("========== TEST SETUP STARTED ==========");
         LoggerUtil.info("Browser: " + browser);
 

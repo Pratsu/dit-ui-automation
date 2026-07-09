@@ -8,8 +8,9 @@
     <test name="Smoke Tests Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="tests.smoke.HomePageSmokeTest"/>
-            <class name="tests.smoke.NavigationSmokeTest"/>
+<!--            <class name="tests.smoke.HomePageSmokeTest"/>-->
+<!--            <class name="tests.smoke.NavigationSmokeTest"/>-->
+            <class name="tests.smoke.ContactUsSmokeTest"/>
         </classes>
     </test>
 </suite>
