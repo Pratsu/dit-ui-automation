@@ -1,42 +1,12 @@
-2026-07-09 15:11:30 [INFO] ========== SUITE STARTED: Smoke Tests Chrome ==========
-2026-07-09 15:11:30 [INFO] ========== TEST SETUP STARTED ==========
-2026-07-02026-07-09 15:11:32 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDr2026-07-09 15:11:34 [INFO] Navigating to: https://ditinteractive.com
-2026-07-09 15:11:39 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-07-09 15:11:39 [INFO] Test started: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:11:39 [INFO] Starting test: TC_SMK_009_verifyContactInquirySubmissio2026-07-09 15:12:00 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 149.0.7827.155 (resolved driver for Chrome 149)
-2026-07-09 15:12:00 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\capra\.cache\selenium\chromedriver\win64\149.0.7827.155\chromedriver.exe
-2026-07-09 15:12:14 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 149.0.7827.155 (resolved driver for Chrome 149)
-2026-07-09 15:12:14 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\capra\.cache\selenium\chromedriver\win64\149.0.7827.155\chromedriver.exe
-2026-07-09 15:12:31 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 149.0.7827.155 (resolved driver for Chrome 149)
-2026-07-09 15:12:31 [TestNG-test-Smoke Tests Chrome-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\capra\.cache\selenium\chromedriver\win64\149.0.7827.155\chromedriver.exe
-ContactInquirySubmission
-2026-07-09 15:12:14 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-07-09 15:12:14 [INFO] Closing browser
-2026-07-09 15:12:14 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-07-09 15:12:14 [INFO] ========== TEST SETUP STARTED ==========
-2026-07-09 15:12:14 [INFO] Browser: chrome
-2026-07-09 15:12:14 [INFO] Initializing Chrome browser
-2026-07-09 15:12:15 [INFO] Navigating to: https://ditinteractive.com
-2026-07-09 15:12:20 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-07-09 15:12:20 [INFO] Test started: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:12:20 [INFO] Starting test: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:12:30 [INFO] Response Message: One or more fields have an error. Please check and try again.
-2026-07-09 15:12:30 [INFO] Test passed: Validation message verified successfully.
-2026-07-09 15:12:31 [INFO] Test PASSED: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:12:31 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-07-09 15:12:31 [INFO] Closing browser
-2026-07-09 15:12:31 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-07-09 15:12:31 [INFO] ========== TEST SETUP STARTED ==========
-2026-07-09 15:12:31 [INFO] Browser: chrome
-2026-07-09 15:12:31 [INFO] Initializing Chrome browser
-2026-07-09 15:12:31 [INFO] Navigating to: https://ditinteractive.com
-2026-07-09 15:12:34 [INFO] ========== TEST SETUP COMPLETED ==========
-2026-07-09 15:12:34 [INFO] Test started: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:12:34 [INFO] Starting test: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:12:43 [INFO] Response Message: One or more fields have an error. Please check and try again.
-2026-07-09 15:12:43 [INFO] Test passed: Validation message verified successfully.
-2026-07-09 15:12:43 [INFO] Test PASSED: TC_SMK_009_verifyContactInquirySubmission
-2026-07-09 15:12:43 [INFO] ========== TEST TEARDOWN STARTED ==========
-2026-07-09 15:12:43 [INFO] Closing browser
-2026-07-09 15:12:44 [INFO] ========== TEST TEARDOWN COMPLETED ==========
-2026-07-09 15:12:44 [INFO] ========== SUITE FINISHED: Smoke Tests Chrome ==========
+2026-07-09 17:56:56 [INFO] ========== TEST SETUP STARTED ==========
+2026-07-09 17:56:56 [INFO] Browser: chrome
+2026-07-09 17:56:56 [INFO] Initializing Chrome browser
+2026-07-09 17:56:57 [INFO] Navigating to: https://ditinteractive.com
+2026-07-09 17:57:02 [INFO] ========== TEST SETUP COMPLETED ==========
+2026-07-09 17:57:02 [INFO] ========== TC_REG_FOOTER_001 Started ==========
+2026-07-09 17:57:08 [INFO] Checking visibility of element: By.cssSelector: .calendly-overlay
+2026-07-09 17:57:08 [INFO] Calendly popup displayed successfully.
+2026-07-09 17:57:08 [INFO] ========== TC_REG_FOOTER_001 Passed ==========
+2026-07-09 17:57:08 [INFO] ========== TEST TEARDOWN STARTED ==========
+2026-07-09 17:57:08 [INFO] Closing browser
+2026-07-09 17:57:08 [INFO] ========== TEST TEARDOWN COMPLETED ==========

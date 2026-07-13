@@ -4,7 +4,9 @@ import base.BaseTest;
 import driver.DriverFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.HomePage;
 import pages.ProjectPlannerPage;
+import utils.LoggerUtil;
 
 public class RegressionTest extends BaseTest {
 
@@ -33,5 +35,29 @@ public class RegressionTest extends BaseTest {
 
         Assert.assertTrue(page.isDigitalMarketingQuestionVisible(), "Digital marketing question not visible");
         Assert.assertTrue(page.isGoogleServicesQuestionVisible(), "Google services question not visible");
+    }
+    @Test(
+            priority = 4,
+            groups = {"Regression"},
+            description = "TC_REG_004 - Verify second Get IN TOUCH button redirects to Contact page"
+    )
+    public void TC_REG_004_verifySecondGetInTouchRedirectsToContactPage() {
+
+        LoggerUtil.info("===== TC_REG_004 Started =====");
+
+        HomePage homePage = new HomePage(DriverFactory.getDriver());
+
+        homePage.clickSecondGetInTouch();
+
+        String actualUrl = DriverFactory.getDriver().getCurrentUrl();
+
+        LoggerUtil.info("Current URL : " + actualUrl);
+
+        Assert.assertTrue(
+                actualUrl.contains("/contact"),
+                "User was not redirected to Contact page."
+        );
+
+        LoggerUtil.info("===== TC_REG_004 Passed =====");
     }
 }

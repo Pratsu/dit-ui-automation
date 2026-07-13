@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import utils.LoggerUtil;
+import utils.WaitUtil;
 
 public class HomePageSmokeTest extends BaseTest {
 
@@ -40,5 +41,21 @@ public class HomePageSmokeTest extends BaseTest {
         HomePage homePage = new HomePage(DriverFactory.getDriver());
         Assert.assertTrue(homePage.isCertifiedVisible(), "Certified section not visible");
         LoggerUtil.info("Test passed: TC_SMK_004_verifyCertifiedSection");
+    }
+    @Test
+    public void TC_SMK_009_verifyGetInTouchRedirectsToContactPage() {
+
+        LoggerUtil.info("Starting test: TC_SMK_009_verifyGetInTouchRedirectsToContactPage");
+
+        HomePage homePage = new HomePage(DriverFactory.getDriver());
+
+        homePage.clickGetInTouch();
+
+        String actualUrl = DriverFactory.getDriver().getCurrentUrl();
+
+        Assert.assertTrue(actualUrl.contains("/contact"),
+                "Expected Contact page but navigated to: " + actualUrl);
+
+        LoggerUtil.info("Successfully redirected to Contact page.");
     }
 }
