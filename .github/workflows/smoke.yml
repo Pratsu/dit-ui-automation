@@ -1,10 +1,20 @@
-name: Manual Smoke Tests
+name: Manual Test Execution
 
 on:
   workflow_dispatch:
+    inputs:
+      suite:
+        description: "Select Test Suite"
+        required: true
+        default: smoke
+        type: choice
+        options:
+          - smoke
+          - sanity
+          - regression
 
 jobs:
-  smoke-test:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,15 +26,18 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: 'maven'
+          cache: maven
 
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
         with:
           chrome-version: stable
 
-      - name: Run Smoke Tests
-        run: mvn clean test -DsuiteXmlFile=src/test/resources/suites/testng-smoke.xml -Dheadless=true
+      - name: Run Selected Test Suite
+        run: |
+          mvn clean test \
+          -DsuiteXmlFile=src/test/resources/suites/testng-${{ github.event.inputs.suite }}.xml \
+          -Dheadless=true
 
       - name: Upload Screenshots
         if: always()
