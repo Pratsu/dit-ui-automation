@@ -37,7 +37,7 @@ jobs:
         run: |
           mvn clean test \
           -DsuiteXmlFile=src/test/resources/suites/testng-${{ github.event.inputs.suite }}.xml \
-          -Dheadless=true
+          -Dheadless=false
 
       - name: Upload Screenshots
         if: always()
