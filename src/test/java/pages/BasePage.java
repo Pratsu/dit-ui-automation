@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import utils.LoggerUtil;
 import utils.WaitUtil;
@@ -25,6 +26,15 @@ public class BasePage {
     protected void click(By locator) {
         LoggerUtil.info("Clicking on element: " + locator);
         waitUtil.waitForClickability(locator).click();
+    }
+    protected void hover(By locator) {
+
+        LoggerUtil.info("Hovering over element: " + locator);
+
+        WebElement element = waitUtil.waitForVisibility(locator);
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
     }
 
     protected void jsClick(By locator) {
